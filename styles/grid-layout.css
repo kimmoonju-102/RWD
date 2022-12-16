@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.group1 {
+  background: #ffcdd2;
+}
+.group2 {
+  background: #f8bbd0;
+}
+.group3 {
+  background: #e1bee7;
+}
+.group4 {
+  background: #d1c4e9;
+}
+.group5 {
+  background: #c5cae9;
+}
+.group6 {
+  background: #bbdefb;
+}
+.group7 {
+  background: #b3e5fc;
+}
+.group8 {
+  background: #b2ebf2;
+}
+.group9 {
+  background: #b2dfdb;
+}
+.group10 {
+  background: #c8e6c9;
+}
+.group11 {
+  background: #dcedc8;
+}
+.group12 {
+  background: #f0f4c3;
+}
+
+.container {
+  background: silver;
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: auto;
+  padding: 24px;
+  gap: 24px;
+}
+
+[class*="group"] {
+  height: 150px;
+}
+
+/* Small Device */
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Medium Device */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Device */
+@media (min-width: 1280px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
